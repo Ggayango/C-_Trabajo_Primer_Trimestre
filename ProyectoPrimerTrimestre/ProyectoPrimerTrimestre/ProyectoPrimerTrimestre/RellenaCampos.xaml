@@ -1,0 +1,22 @@
+﻿<Window x:Class="ProyectoPrimerTrimestre.RellenaCampos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoPrimerTrimestre"
+        mc:Ignorable="d"
+        Title="Rellena los Campos MIARMA" Height="310" Width="350" WindowStartupLocation="CenterScreen" MaxHeight="310" MaxWidth="350">
+    <StackPanel Background="#FF5FCB74">
+
+        <Image   x:Name="image2" Height="193" Margin="0,0,0,0">
+            <Image.Source>
+                <BitmapImage UriSource="sarcasm_face.png" />
+            </Image.Source>
+        </Image>
+
+        <Label Content="Anda prenda a ver si no fijamos mas" Margin="10,0,0,0" FontFamily="Lucida Console"></Label>
+        <Label Content="y completamos los campos que faltan..." Margin="40,0,0,0" FontFamily="Lucida Console"></Label>
+        <Button Content="Lo siento, ¯\_(ツ)_/¯" Margin="80,0,80,0" Click="Button_Click"></Button>
+
+    </StackPanel>
+</Window>
