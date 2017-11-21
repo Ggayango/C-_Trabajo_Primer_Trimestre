@@ -1,0 +1,62 @@
+﻿<Window x:Class="ProyectoPrimerTrimestre.Registro_de_Usuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoPrimerTrimestre"
+        mc:Ignorable="d"
+        Title="Registro de Usuario" Height="380" Width="726.853" MaxHeight="380" MaxWidth="726.853" Background="Black" WindowStartupLocation="CenterScreen">
+
+    <Grid xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Name="rootElement" Margin="20,24,3.8,27.8" Background="Black">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" MinHeight="32" />
+            <RowDefinition Height="Auto" MinHeight="23.2" />
+            <RowDefinition Height="Auto" MinHeight="17.6" />
+            <RowDefinition Height="Auto" MinHeight="57.6" />
+            <RowDefinition Height="Auto" MinHeight="13.6" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="1" Name="nombreBox" Margin="0,0.2" FontFamily="Lucida Console" Foreground="#FF0FFA00">Nombre:</Label>
+        <TextBox Grid.ColumnSpan="4" Name="nombretxt" Margin="82,0,0,5" Grid.RowSpan="2" SelectionBrush="#FF0FFA00" BorderBrush="#FF0FFA00" CaretBrush="#FF0FFA00" Foreground="#FF0FFA00" Background="Black"/>
+
+        <Label Grid.Column="0" Grid.Row="2" Name="apellidosBox" Margin="0,0,0.4,9.8" FontFamily="Lucida Console" Foreground="#FF0FFA00">Apellidos:</Label>
+        <TextBox Grid.Row="2" Grid.ColumnSpan="4" Name="apellidostxt" Margin="82,2,0,9.8" Background="Black" BorderBrush="#FF0FFA00" CaretBrush="#FF0FFA00" Foreground="#FF0FFA00" SelectionBrush="#FF0FFA00"/>
+
+        <Label Grid.Column="0" Grid.Row="3" Name="dniBox" Margin="0,0.2,0.4,5.6" FontFamily="Lucida Console" Foreground="#FF0FFA00">DNI:</Label>
+        <TextBox Grid.Column="1" MaxLength="9" Grid.Row="3" Name="dnitxt" Margin="0.6,0.2,97,9.6" Grid.ColumnSpan="3" BorderBrush="#FF0FFA00" Background="Black" CaretBrush="#FF0FFA00" Foreground="#FF0FFA00" SelectionBrush="#FF0FFA00"/>
+
+        <Label Grid.Column="3" Grid.Row="3" Margin="88.4,0.2,-62,2.6" FontFamily="Lucida Console" Foreground="#FF0FFA00">Fecha de ancimiento:</Label>
+        <DatePicker Grid.Column="3" Margin="238,0,-337.6,17.2" Grid.Row="3" Grid.RowSpan="2" Name="fechaBox" Background="Black" Foreground="Black" BorderBrush="#FF0FFA00"/>
+
+        <Label Grid.Column="0" Grid.Row="5" Name="pesoBox" Margin="0,0,0.4,62.6" FontFamily="Lucida Console" Foreground="#FF0FFA00">Peso:</Label>
+        <TextBox Grid.Row="5" MaxLength="2" Name="pesotxt" Text="0" Margin="82,0,0.8,62.6" Grid.ColumnSpan="2" Background="Black" BorderBrush="#FF0FFA00" CaretBrush="#FF0FFA00" Foreground="#FF0FFA00" SelectionBrush="#FF0FFA00"/>
+
+        <Label Grid.Column="0" Grid.Row="5" Name="alturaBox" Margin="0,0,0.4,36.6" FontFamily="Lucida Console" Height="19" VerticalAlignment="Bottom" Foreground="#FF0FFA00">Altura:</Label>
+        <TextBox Grid.Row="5" Name="alturatxt" MaxLength="4" Text="0" Margin="82,30,0.8,36.6" Grid.ColumnSpan="2" Background="Black" BorderBrush="#FF0FFA00" SelectionBrush="#FF0FFA00" CaretBrush="#FF0FFA00" Foreground="#FF0FFA00"/>
+
+        <Label Grid.Column="0" Grid.Row="5" Name="sexoBox" Margin="0,53.8,0.4,0.8" FontFamily="Lucida Console" Foreground="#FF0FFA00">Sexo:</Label>
+        <RadioButton Grid.Row="5" Name="sexoHombre" Margin="82,59,1.8,4.6" Content="Hombre"
+                     FontFamily="Lucida Console" Foreground="#FF0FFA00" Background="#FF0FFA00" BorderBrush="#FF0FFA00" Grid.ColumnSpan="2" />
+        <RadioButton Grid.Column="1" Grid.Row="6" Name="sexoMujer" Margin="0,0.2,1.8,0" 
+                     HorizontalAlignment="Right" Width="72" Content="Mujer" FontFamily="Lucida Console" Foreground="#FF0FFA00" Background="#FF0FFA00" BorderBrush="#FF0FFA00"/>
+
+        <Button Grid.Column="3" Margin="160,78.6,-133.6,-99.4" Grid.Row="6" Content="Registrar Usuario" Name="registro" FontFamily="Lucida Console" Background="Black" Click="registro_Click" BorderBrush="#FF0FFA00" Foreground="#FF0FFA00" OpacityMask="#FFDD0B0B"/>
+
+        <Button Grid.Column="3" Margin="321.4,78.2,-227,-99" Grid.Row="6" Content="Salir" Background="Black" FontFamily="Lucida Console" Click="cancelar_Click" Name="cancelar" BorderBrush="#FF0FFA00" Foreground="#FF0FFA00"></Button>
+
+    </Grid>
+
+</Window>
